@@ -20,5 +20,9 @@ public class Stack {
         return array.getFirst();
     }
 
+    public int pop(){
+        return array.removeFirst();
+    }
+
 
 }

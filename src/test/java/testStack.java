@@ -25,6 +25,7 @@ public class testStack {
         assertFalse(stack.isEmpty());
     }
 
+    @Test
     public void peekElementFromStack(){
         Stack stack=new Stack();
         stack.push(3);
@@ -32,4 +33,15 @@ public class testStack {
         stack.push(9);
         assertEquals(9,stack.peek());
     }
+
+    @Test
+    public void removeTopElement(){
+        Stack stack=new Stack();
+        stack.push(67);
+        stack.push(68);
+        assertEquals(68,stack.pop());
+        assertEquals(1,stack.sizeof());
+    }
+
+
 }
