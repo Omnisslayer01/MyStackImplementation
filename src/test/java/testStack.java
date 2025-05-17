@@ -1,5 +1,9 @@
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -41,6 +45,16 @@ public class testStack {
         stack.push(68);
         assertEquals(68,stack.pop());
         assertEquals(1,stack.sizeof());
+    }
+
+    @Test
+    public void displayMyStack(){
+        Stack stack=new Stack();
+        stack.push(45);
+        stack.push(98);
+        stack.push(34);
+
+
     }
 
 
