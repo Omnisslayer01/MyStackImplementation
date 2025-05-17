@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Stack {
     private ArrayList<Integer> array;
@@ -24,5 +25,8 @@ public class Stack {
         return array.removeFirst();
     }
 
-
+    public List<Integer> toList() {
+        // Returns a copy of the internal list elements in their current order
+        return new ArrayList<>(array);
+    }
 }
