@@ -16,4 +16,9 @@ public class Stack {
         array.addFirst(num);
     }
 
+    public int peek(){
+        return array.getFirst();
+    }
+
+
 }

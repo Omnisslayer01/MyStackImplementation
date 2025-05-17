@@ -17,11 +17,19 @@ public class testStack {
     }
 
     @Test
-    public void push(){
+    public void addElementToStack(){
         Stack stack=new Stack();
         stack.push(1);
         stack.push(5);
         assertEquals(2,stack.sizeof());
         assertFalse(stack.isEmpty());
+    }
+
+    public void peekElementFromStack(){
+        Stack stack=new Stack();
+        stack.push(3);
+        stack.push(5);
+        stack.push(9);
+        assertEquals(9,stack.peek());
     }
 }
