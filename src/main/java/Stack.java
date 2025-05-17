@@ -11,4 +11,9 @@ public class Stack {
     public int sizeof(){
         return array.size();
     }
+
+    public void push(int num){
+        array.addFirst(num);
+    }
+
 }
